@@ -1,6 +1,5 @@
-import * as IconsAi from "react-icons/ai";
-import * as IconsBs from "react-icons/bs";
-import IconList from "./IconList";
+import IconsAi from "./IconsAi";
+import IconsBs from "./IconsBs";
 
 export enum ThemeEnum {
   AI = "ai",
@@ -65,9 +64,9 @@ const gapVariants: { [key: string]: string } = {
 const renderIconsByTheme = (theme: ThemeEnum) => {
   switch (theme) {
     case ThemeEnum.AI:
-      return <IconList icons={IconsAi} />;
+      return <IconsAi />;
     case ThemeEnum.BS:
-      return <IconList icons={IconsBs} />;
+      return <IconsBs />;
     default:
       return null;
   }
